@@ -1,0 +1,146 @@
+body {
+    font-family: 'Barlow', sans-serif;
+}
+.loader{
+    display: none;
+}
+h4, h1, h2, h3, h5, h6 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+}
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+}
+.navbar-collapse {
+   text-align: left;
+}
+.carousel-item img {
+    width: 100%;
+    height: 90vh;
+    padding: 15px 15px 15px 15px;
+}
+.section-wrap {
+    padding: 40px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-full-width {
+    width: 100%;
+}
+
+.pb-40 {
+    padding-bottom: 50px
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.socials {
+    font-size: 1.5em;
+}
+
+.socials > a {
+    color: #000000;
+}
+
+.nav__socials {
+    border-left: 1px solid #b4b4b4;
+}
+
+.nav__phone {
+    padding-right: 4em;
+}
+
+.nav__phone > a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.carousel-caption {
+    margin-bottom: 20%;
+}
+
+.feature {
+    font-size: 3em;
+}
+
+.intro__title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.project__img {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+}
+
+
+.img-container {
+    position: relative;
+    margin-bottom: 20px; /* Add margin between images */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+/* Styling for links */
+.d-flex a {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 2px solid gray;
+    transition: border-bottom 0.3s;
+}
+
+.d-flex a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+@media (max-width: 767.98px) {
+    /* Adjust styling for smaller screens */
+    .img-container {
+        margin-bottom: 10px;
+    }
+}
+
+.testimonial-section {
+    position: relative;
+    background: url('image/aleksandr-popov-qD8awJr2D50-unsplash.jpg') center/cover no-repeat; /* Add the path to your background image */
+    color: #ffffff;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.carousel-inner {
+    max-width: 800px; /* Adjust the maximum width of the carousel as needed */
+    margin: 0 auto;
+}
+
+.carousel-item {
+    text-align: center;
+}
