@@ -68,6 +68,14 @@ h4, h1, h2, h3, h5, h6 {
     bottom: 33%;
 }
 
+.carousel-caption h2 {
+    font-size: 3em;
+}
+
+.carousel-caption p {
+    font-size: 1.5em;
+}
+
 .feature {
     font-size: 3em;
 }
@@ -349,3 +357,73 @@ h4, h1, h2, h3, h5, h6 {
 .social-icons a {
     color: #ffffff;
 }
+
+.hero {
+    background-image: url("https://picsum.photos/2000/1000");
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
+    height: 40vh;
+    color: white;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 6rem;
+  }
+
+  .hero-description {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+
+  .blog-section {
+    padding: 4rem 0;
+  }
+
+  .blog-post {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .blog-post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .blog-post-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 1em;
+  }
+
+  .blog-post-description {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .pagination {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .pagination li {
+    margin-right: 1rem;
+  }
+
+  .pagination .page-link {
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+  }
+
+  .pagination .page-link.active {
+    background-color: #eee;
+  }
