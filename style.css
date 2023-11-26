@@ -18,7 +18,7 @@ h4, h1, h2, h3, h5, h6 {
 }
 .carousel-item img {
     width: 100%;
-    height: 90vh;
+    height: 60vh;
     padding: 15px 15px 15px 15px;
 }
 .section-wrap {
@@ -65,7 +65,7 @@ h4, h1, h2, h3, h5, h6 {
 }
 
 .carousel-caption {
-    margin-bottom: 20%;
+    bottom: 33%;
 }
 
 .feature {
@@ -131,7 +131,7 @@ h4, h1, h2, h3, h5, h6 {
 
 .testimonial-section {
     position: relative;
-    background: url('image/aleksandr-popov-qD8awJr2D50-unsplash.jpg') center/cover no-repeat; /* Add the path to your background image */
+    background: url('image/aditya-chinchure-S1ToogvRvlU-unsplash.jpg') center/cover no-repeat; /* Add the path to your background image */
     color: #ffffff;
     padding: 100px 0; /* Adjust padding as needed */
 }
@@ -143,4 +143,209 @@ h4, h1, h2, h3, h5, h6 {
 
 .carousel-item {
     text-align: center;
+}
+
+.client-logos-section {
+    background-color: #f2f2f2; /* Gray background color */
+    padding: 30px 0 0; /* Adjust padding as needed */
+}
+
+.client-logo {
+    max-width: 150px; /* Adjust the maximum width of the logos as needed */
+    margin: 0 auto; /* Center logos */
+    display: block;
+}
+
+.call-us {
+    background-color: #ffb31a;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    color: #222222;
+    text-align: center;
+  }
+  
+  .call-us__icon {
+    font-size: 50px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  .call-us__title {
+    font-size: 16px;
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 14px;
+    max-width: 70%;
+  }
+  
+  .call-us__phone-number {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 30px;
+    margin-top: 8px;
+    color: #222222;
+    font-weight: 600;
+    display: block;
+  }
+
+  /* Blog Grid
+-------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+    .blog-grid__title-col {
+      height: 100%;
+    }
+  }
+  
+  /* Blog Meta
+  -------------------------------------------------------*/
+  .entry__meta {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .entry__meta li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 18px;
+    color: #9e9e9e;
+  }
+  
+  .entry__meta li:last-child {
+    margin-right: 0;
+  }
+  
+  .entry__meta a {
+    color: #868686;
+  }
+  
+  .entry__meta a:hover, .entry__meta a:focus {
+    color: #ffb31a;
+  }
+  
+  .entry__meta i {
+    color: #ffb31a;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 3px;
+  }
+  
+  /* From Blog
+  -------------------------------------------------------*/
+  .from-blog__recent-posts-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .from-blog__recent-posts-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 15px 0;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .from-blog__recent-posts-item:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .from-blog__post-number {
+    display: inline-block;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #cacaca;
+    margin-right: 14px;
+    font-size: 12px;
+    color: #fff;
+    float: left;
+  }
+  
+  .from-blog__post-url {
+    color: #868686;
+    line-height: 24px;
+    overflow: hidden;
+  }
+
+  .entry {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 56px;
+  }
+  
+  .entry__img-holder {
+    margin-bottom: 24px;
+  }
+  
+  .entry__img {
+    width: 100%;
+  }
+  
+  .entry__title {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    margin-top: 8px;
+  }
+  
+  .entry__excerpt {
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .entry__excerpt p {
+    margin-bottom: 0;
+  }
+
+  footer {
+    background: url('image/adrien-olichon-RCAhiGJsUUE-unsplash.jpg') center/cover no-repeat; /* Add the path to your footer image */
+    color: white;
+    padding: 50px 0;
+}
+
+.footer-logo {
+    max-width: 150px; /* Adjust the maximum width of the logo as needed */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social-icons i {
+    font-size: 24px; /* Adjust the font size of the icons as needed */
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;
 }
