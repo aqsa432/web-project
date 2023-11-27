@@ -23,7 +23,7 @@
 
 <body>
 
-    <header class="container-fluid border-bottom">
+    <header class="main-header container-fluid border-bottom sticky-top">
         <div class="row justify-content-md-center">
             <div class="col col-lg-4 navbar navbar-expand-lg navbar-light bg-white px-4">
                 <a class="navbar-brand" href="/">
@@ -51,7 +51,7 @@
                     </ul>
                 </nav>
             </div>
-
+    
             <div class="col col-lg-5 nav__phone nav--align-right text-end my-auto">
                 <span class="nav__phone-text">Call us:</span>
                 <a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>
@@ -59,14 +59,10 @@
     
             <div class="col col-lg-3 nav__socials text-center align-middle my-auto">
                 <div class="socials">
-                    <a href="#" aria-label="twitter" title="twitter" target="_blank"><i
-                            class="bi bi-twitter"></i></a>
-                    <a href="#" aria-label="facebook" title="facebook" target="_blank"><i
-                            class="bi bi-facebook px-4"></i></a>
-                    <a href="#" aria-label="youtube" title="youtube" target="_blank"><i
-                            class="bi bi-youtube"></i></a>
-                    <a href="#" aria-label="instagram" title="instagram" target="_blank"><i
-                            class="bi bi-instagram px-4"></i></a>
+                    <a href="#" aria-label="twitter" title="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="#" aria-label="facebook" title="facebook" target="_blank"><i class="bi bi-facebook px-4"></i></a>
+                    <a href="#" aria-label="youtube" title="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
+                    <a href="#" aria-label="instagram" title="instagram" target="_blank"><i class="bi bi-instagram px-4"></i></a>
                 </div>
             </div>
         </div>
@@ -223,6 +219,10 @@
         </div>
     </footer>
 
+    <div id="back-to-top" class="btn btn-primary btn-lg">
+    <i class="bi bi-arrow-up"></i>
+    </div>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -233,27 +233,6 @@
     crossorigin="anonymous"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-<script type="text/javascript">
-    function shuffleImages(category) {
-        var $container = $('#imageContainer');
-        var $images = $container.find('.col-md-4');
-
-        // Randomize the order of images
-        $images.sort(function () {
-            return Math.random() - 0.5;
-        });
-
-        // Remove existing images
-        $container.empty();
-
-        // Append the shuffled images back to the container
-        $container.append($images);
-
-        // Update the images based on the selected category (you may need to implement your logic here)
-        // For now, we'll just show all images
-        $container.find('img').show();
-    }
-</script>
+<script type="text/javascript" src="script.js"></script>
 
 </html>

@@ -43,3 +43,38 @@ function toggleNavbar() {
     var navbar = document.getElementById('navbar');
     navbar.style.display = (navbar.style.display === 'block') ? 'none' : 'block';
 }
+
+
+$(document).ready(function(){
+$(window).scroll(function(){
+    if ($(window).scrollTop() > 100) {
+    $("#back-to-top").fadeIn();
+    } else {
+    $("#back-to-top").fadeOut();
+    }
+});
+
+$("#back-to-top").click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 500);
+});
+});
+
+function shuffleImages(category) {
+    var $container = $('#imageContainer');
+    var $images = $container.find('.col-md-4');
+
+    // Randomize the order of images
+    $images.sort(function () {
+        return Math.random() - 0.5;
+    });
+
+    // Remove existing images
+    $container.empty();
+
+    // Append the shuffled images back to the container
+    $container.append($images);
+
+    // Update the images based on the selected category (you may need to implement your logic here)
+    // For now, we'll just show all images
+    $container.find('img').show();
+}
