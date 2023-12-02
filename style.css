@@ -66,6 +66,7 @@ h4, h1, h2, h3, h5, h6 {
 
 .carousel-caption {
     bottom: 33%;
+    line-height: 100%;
 }
 
 .carousel-caption h2 {
@@ -97,7 +98,7 @@ h4, h1, h2, h3, h5, h6 {
     margin-bottom: 20px; /* Add margin between images */
 }
 
-.overlay {
+.overlay {  
     position: absolute;
     top: 0;
     left: 0;
@@ -133,9 +134,10 @@ h4, h1, h2, h3, h5, h6 {
 @media (max-width: 767.98px) {
     /* Adjust styling for smaller screens */
     .img-container {
-        margin-bottom: 10px;
+        margin-bottom: 10px;   
     }
 }
+
 
 .testimonial-section {
     position: relative;
@@ -151,7 +153,33 @@ h4, h1, h2, h3, h5, h6 {
 
 .carousel-item {
     text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
+    
+  .carousel-item.active {
+    opacity: 1;
+  }
+
+  .slide {
+    position: relative;
+    height: 100vh;
+    background-color: #eee;
+    text-align: center;
+  }
+  
+  .slide-in-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: slideinbottom 2s ease-in-out;
+  }
+  @keyframes slideinbottom {
+    from {top: 0px;}
+    to {top: 200px;}
+
+  }
+
 
 .client-logos-section {
     background-color: #f2f2f2; /* Gray background color */
@@ -202,7 +230,7 @@ h4, h1, h2, h3, h5, h6 {
 @media only screen and (min-width: 992px) {
     .blog-grid__title-col {
       height: 100%;
-    }
+    }  
   }
   
   /* Blog Meta
@@ -273,13 +301,13 @@ h4, h1, h2, h3, h5, h6 {
     margin-right: 14px;
     font-size: 12px;
     color: #fff;
-    float: left;
+    float: left; 
   }
   
   .from-blog__post-url {
     color: #868686;
     line-height: 24px;
-    overflow: hidden;
+    overflow: hidden; 
   }
 
   .entry {
@@ -316,10 +344,11 @@ h4, h1, h2, h3, h5, h6 {
     background: url('image/adrien-olichon-RCAhiGJsUUE-unsplash.jpg') center/cover no-repeat; /* Add the path to your footer image */
     color: white;
     padding: 50px 0;
+    width: 100%;
 }
 
 .footer-logo {
-    max-width: 150px; /* Adjust the maximum width of the logo as needed */
+    max-width: 100%; /* Adjust the maximum width of the logo as needed */
 }
 
 .footer-links {
@@ -359,7 +388,6 @@ h4, h1, h2, h3, h5, h6 {
 }
 
 .hero {
-    background-image: url("https://picsum.photos/2000/1000");
     background-size: cover;
     background-position: center;
     background-color: #000000;
@@ -407,7 +435,7 @@ h4, h1, h2, h3, h5, h6 {
     line-height: 1.5;
     max-height: 100px;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; 
   }
 
   .pagination {
@@ -484,3 +512,58 @@ h4, h1, h2, h3, h5, h6 {
   .main-header {
     background-color: #ffffff;
   }
+
+  .contact-us {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contact-us h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us form {
+    margin-bottom: 20px;
+  }
+  
+  .contact-us input,
+  .contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-us button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-us .social-media {
+    text-align: center;
+  }
+  
+  .contact-us .social-media a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #000;
+  }
+  
+  .contact-us .social-media a:hover {
+    color: #ccc;
+  }
+
+  
