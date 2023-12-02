@@ -39,6 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+$(document).ready(function(){
+    $('.carousel-item').addClass('animated fadeIn');
+  });
+
+  
+
 function toggleNavbar() {
     var navbar = document.getElementById('navbar');
     navbar.style.display = (navbar.style.display === 'block') ? 'none' : 'block';
@@ -78,3 +84,18 @@ function shuffleImages(category) {
     // For now, we'll just show all images
     $container.find('img').show();
 }
+
+// Animate the contact form and social media icons
+
+const contactForm = document.querySelector('.contact-us');
+const socialMediaIcons = document.querySelectorAll('.contact-us .social-media a');
+
+window.addEventListener('load', function() {
+  // Animate the contact form
+  contactForm.classList.add('animated', 'fadeIn');
+
+  // Animate the social media icons
+  socialMediaIcons.forEach(function(icon) {
+    icon.classList.add('animated', 'fadeIn');
+  });
+});
